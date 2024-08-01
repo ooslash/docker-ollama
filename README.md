@@ -12,12 +12,17 @@ sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
 
-# run ollama
+# Run Ollama
 ```bash
 docker compose up -d
 ```
 
-# LLaMA 70B model
+# Install LLaMA 70B model
 ```bash
 docker exec -it ollama ollama pull llama3.1:70b
+```
+
+# Run LLaMA 70B model
+```bash
+docker exec -it ollama ollama run llama3.1:70b
 ```
